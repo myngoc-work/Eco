@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About_Paragraph" xml:space="preserve">
+    <value>
+
+     Cung cấp dịch vụ Quan Trắc Môi Trường trên phạm vi toàn quốc với hơn 10 năm kinh nghiệm trong lĩnh vực này. 
+
+     Trình độ cao và chuyên sâu về môi trường với các ngành công nghiệp liên quan. 
+
+     Công ty tự tin đáp ứng các yêu cầu về chất lượng, an toàn và bảo vệ môi trường nhờ quy trình làm việc chặt chẽ và trang thiết bị hiện đại.</value>
+  </data>
+  <data name="About_Slogan" xml:space="preserve">
+    <value>🌱 Đơn vị tiên phong trong giám sát và bảo vệ môi trường 
+💡 Quan trắc chính xác, an toàn và thân thiện với môi trường</value>
+  </data>
+  <data name="About_Title" xml:space="preserve">
+    <value>Công ty TNHH EcoGreen - nhanh chóng - chính xác - tin cậy</value>
+  </data>
+  <data name="AIDeploy_Title" xml:space="preserve">
+    <value>AI dự đoán tái ký hợp đồng</value>
+  </data>
+  <data name="ConfirmLogoutMessage" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn đăng xuất không?</value>
+  </data>
+  <data name="ConfirmLogoutTitle" xml:space="preserve">
+    <value>Xác nhận đăng xuất</value>
+  </data>
+  <data name="Gioi" xml:space="preserve">
+    <value>Đơn hàng đang thực hiện</value>
+  </data>
+  <data name="Dashboard_OverdueOrders" xml:space="preserve">
+    <value>Đơn hàng đã quá hạn</value>
+  </data>
+  <data name="Dashboard_SuccessfulOrders" xml:space="preserve">
+    <value>Đơn hàng thành công</value>
+  </data>
+  <data name="Dashboard_Title" xml:space="preserve">
+    <value>Bảng điều khiển</value>
+  </data>
+  <data name="Error_ChangePasswordNoUser" xml:space="preserve">
+    <value>Không thể đổi mật khẩu. Vui lòng đăng nhập để thực hiện chức năng này.</value>
+  </data>
+  <data name="Error_LanguageSwitch" xml:space="preserve">
+    <value>Lỗi khi áp dụng ngôn ngữ</value>
+  </data>
+  <data name="Error_NoUserInfo" xml:space="preserve">
+    <value>Không có thông tin người dùng. Vui lòng đăng nhập lại.</value>
+  </data>
+  <data name="Error_Title" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="ForceLogoutMessage" xml:space="preserve">
+    <value>Vui lòng đăng xuất trước khi thoát khỏi ứng dụng!</value>
+  </data>
+  <data name="GuestUserText" xml:space="preserve">
+    <value>Khách</value>
+  </data>
+  <data name="Header_Logout" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="Menu_About" xml:space="preserve">
+    <value>Giới thiệu</value>
+  </data>
+  <data name="Menu_ChangePassword" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+  </data>
+  <data name="Menu_ContractManagement" xml:space="preserve">
+    <value>Quản lý đơn hàng</value>
+  </data>
+  <data name="Menu_Home" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="Menu_Notifications" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+  <data name="Menu_PersonalInfo" xml:space="preserve">
+    <value>Thông tin cá nhân</value>
+  </data>
+  <data name="Menu_Statistics" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="Notification_Title" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+  <data name="PasswordChangedSuccessMessage" xml:space="preserve">
+    <value>Mật khẩu đã được đổi thành công.</value>
+  </data>
+  <data name="AdminFunctions" xml:space="preserve">
+    <value>Chức năng quản lý</value>
+  </data>
+  <data name="EmployeeInfo_Title" xml:space="preserve">
+    <value>Thông tin nhân viên</value>
+  </data>
+  <data name="EmployeeID" xml:space="preserve">
+    <value>Mã số nhân viên</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Họ và tên</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Phòng ban</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="Position" xml:space="preserve">
+    <value>Chức vụ</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Nơi ở</value>
+  </data>
+  <data name="SaveProfile" xml:space="preserve">
+    <value>Lưu và cập nhật thông tin</value>
+  </data>
+  <data name="ChangePhoto" xml:space="preserve">
+    <value>Đổi ảnh</value>
+  </data>
+  <data name="lblNotification_Title" xml:space="preserve">
+    <value>Thông báo hợp đồng quá hạn</value>
+  </data>
+  <data name="lblInfo" xml:space="preserve">
+    <value>Email thông báo về các đơn hàng này đã được hệ thống tự động gửi đến trưởng bộ phận liên quan.</value>
+  </data>
+  <data name="Statistics_Title" xml:space="preserve">
+    <value>Thống kê hợp đồng</value>
+  </data>
+  <data name="SuccessTitle" xml:space="preserve">
+    <value>Hợp đồng thành công</value>
+  </data>
+  <data name="InProgressTitle" xml:space="preserve">
+    <value>Hợp đồng đang thực hiện</value>
+  </data>
+  <data name="OverdueTitle" xml:space="preserve">
+    <value>Hợp đồng quá hạn</value>
+  </data>
+  <data name="ReturningTitle" xml:space="preserve">
+    <value>Khách hàng quay lại</value>
+  </data>
+  <data name="Revenue" xml:space="preserve">
+    <value>Doanh số theo ngày (VND)</value>
+  </data>
+  <data name="Statistics_OrderChartTitle" xml:space="preserve">
+    <value>Biểu đồ đơn hàng</value>
+  </data>
+  <data name="Statistics_RevenueViewLabel" xml:space="preserve">
+    <value>Chế độ xem</value>
+  </data>
+  <data name="Statistics_RevenueView_Month" xml:space="preserve">
+    <value>Theo tháng</value>
+  </data>
+  <data name="Statistics_RevenueView_Quarter" xml:space="preserve">
+    <value>Theo quý</value>
+  </data>
+  <data name="Statistics_Filter_From" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="Statistics_Filter_To" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="Statistics_Filter_Apply" xml:space="preserve">
+    <value>Lọc</value>
+  </data>
+  <data name="Statistics_Filter_Clear" xml:space="preserve">
+    <value>Xóa lọc</value>
+  </data>
+  <data name="label2" xml:space="preserve">
+    <value>Xác thực hai yếu tố với Google Authenticator</value>
+  </data>
+  <data name="label5" xml:space="preserve">
+    <value>Để kích hoạt xác thực hai yếu tố (2FA) trên tài khoản của bạn. Bạn cần làm theo các bước sau:</value>
+  </data>
+  <data name="label6" xml:space="preserve">
+    <value>Bước 1: Bật nút Tạo khóa bí mật 2FA</value>
+  </data>
+  <data name="label7" xml:space="preserve">
+    <value>Bước 2: Cài đặt ứng dụng Google Authenticator</value>
+  </data>
+  <data name="TOTPCodeSetup" xml:space="preserve">
+    <value>Bước 3: Mở ứng dụng và quét</value>
+  </data>
+  <data name="lbl4FA" xml:space="preserve">
+    <value>Bước 4: Nhập mã xác thực do ứng dụng cung cấp</value>
+  </data>
+  <data name="btnSubmit2FA" xml:space="preserve">
+    <value>Gửi</value>
+  </data>
+  <data name="tabPage1" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+  </data>
+  <data name="tabPage2FA" xml:space="preserve">
+    <value>2FA</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu hiện tại và mật khẩu mới của bạn để đảm bảo an toàn tài khoản!</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Mật khẩu hiện tại</value>
+  </data>
+  <data name="label3" xml:space="preserve">
+    <value>Mật khẩu mới</value>
+  </data>
+  <data name="label4" xml:space="preserve">
+    <value>Nhập lại mật khẩu mới</value>
+  </data>
+  <data name="ConfirmChange" xml:space="preserve">
+    <value>Xác nhận</value>
+  </data>
+  <data name="lblMainTitle" xml:space="preserve">
+    <value>Quản lý đơn hàng</value>
+  </data>
+  <data name="lblContractListTitle" xml:space="preserve">
+    <value>DANH SÁCH ĐƠN HÀNG</value>
+  </data>
+  <data name="lblPanelTitle" xml:space="preserve">
+    <value>Phòng kinh doanh: cập nhật thông tin</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Lưu thông tin</value>
+  </data>
+  <data name="SalesDept_CustomerName" xml:space="preserve">
+    <value>Tên doanh nghiệp</value>
+  </data>
+  <data name="SalesDept_CustomerID" xml:space="preserve">
+    <value>Mã khách hàng</value>
+  </data>
+  <data name="SalesDept_Address" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="SalesDept_RepresentativeEmail" xml:space="preserve">
+    <value>Email đại diện</value>
+  </data>
+  <data name="SalesDept_RepresentativeName" xml:space="preserve">
+    <value>Tên người đại diện</value>
+  </data>
+  <data name="SalesDept_PhoneNumber" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="SalesDept_ContractSignDate" xml:space="preserve">
+    <value>Ngày ký hợp đồng</value>
+  </data>
+  <data name="SalesDept_ExpectedResultDate" xml:space="preserve">
+    <value>Ngày dự kiến trả kết quả</value>
+  </data>
+  <data name="lblResultsTitle" xml:space="preserve">
+    <value>Phòng Kết quả: Rà soát và Xuất file</value>
+  </data>
+  <data name="lblResultsDesc" xml:space="preserve">
+    <value>Vui lòng kiểm tra lại toàn bộ thông tin và kết quả từ các phòng ban trước khi xuất file và gửi cho khách hàng.</value>
+  </data>
+  <data name="btnPrintReport" xml:space="preserve">
+    <value>In báo cáo</value>
+  </data>
+  <data name="btnSendEmail" xml:space="preserve">
+    <value>Gửi email cho khách hàng</value>
+  </data>
+  <data name="tabPageGeneralInfo" xml:space="preserve">
+    <value>Thông tin chung</value>
+  </data>
+  <data name="tabPageParameters" xml:space="preserve">
+    <value>Nền mẫu và thông số</value>
+  </data>
+  <data name="tabPageResults" xml:space="preserve">
+    <value>Hoàn tất và trả kết quả</value>
+  </data>
+  <data name="lblDashboard_InProgressOrders" xml:space="preserve">
+    <value>Đơn hàng đang thực hiện</value>
+  </data>
+  <data name="Dashboard_InProgressOrders" xml:space="preserve">
+    <value> Đơn hàng đang thực hiện</value>
+  </data>
+</root>

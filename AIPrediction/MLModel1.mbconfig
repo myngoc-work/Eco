@@ -1,0 +1,383 @@
+﻿{
+  "Scenario": "Classification",
+  "DataSource": {
+    "Type": "SQL",
+    "Version": 1,
+    "ColumnProperties": [
+      {
+        "ColumnName": "ContractId",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "CustomerId",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "CompletionTimeInDays",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "DaysOverdue",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "NonStandardResultsCount",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "TotalParametersCount",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Renewed",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ],
+    "ConnectionString": "Data Source=JACKYE369\\SQLEXPRESS01;Initial Catalog=QLQTMT;Integrated Security=True;Trust Server Certificate=True",
+    "CommandString": "SELECT CAST([ContractId] as NVARCHAR(MAX)), CAST([CustomerId] as NVARCHAR(MAX)), CAST([CompletionTimeInDays] as REAL), CAST([DaysOverdue] as REAL), CAST([NonStandardResultsCount] as REAL), CAST([TotalParametersCount] as REAL), [Renewed] FROM [dbo].[V_Contract_History_For_AI]",
+    "DatabaseName": "QLQTMT",
+    "SelectedTableDbo": "dbo",
+    "TableName": "V_Contract_History_For_AI"
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 0.836111111111111,
+        "RuntimeInSeconds": 1.932,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4",
+          "e0": {
+            "OutputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount"
+            ],
+            "InputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "ContractId",
+            "OutputColumnName": "ContractId"
+          },
+          "e2": {
+            "InputColumnName": "CustomerId",
+            "OutputColumnName": "CustomerId"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount",
+              "ContractId",
+              "CustomerId"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 254,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "Renewed",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 0.836111111111111,
+        "RuntimeInSeconds": 0.994,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4",
+          "e0": {
+            "OutputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount"
+            ],
+            "InputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "ContractId",
+            "OutputColumnName": "ContractId"
+          },
+          "e2": {
+            "InputColumnName": "CustomerId",
+            "OutputColumnName": "CustomerId"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount",
+              "ContractId",
+              "CustomerId"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 27,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 262,
+            "FeatureFraction": 0.95030973564743371,
+            "LearningRate": 0.21782501225794229,
+            "LabelColumnName": "Renewed",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmBinary",
+        "Score": 0.836111111111111,
+        "RuntimeInSeconds": 1.174,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount"
+            ],
+            "InputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "ContractId",
+            "OutputColumnName": "ContractId"
+          },
+          "e2": {
+            "InputColumnName": "CustomerId",
+            "OutputColumnName": "CustomerId"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount",
+              "ContractId",
+              "CustomerId"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 254,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Renewed",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 0.836111111111111,
+        "RuntimeInSeconds": 1.199,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4",
+          "e0": {
+            "OutputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount"
+            ],
+            "InputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "ContractId",
+            "OutputColumnName": "ContractId"
+          },
+          "e2": {
+            "InputColumnName": "CustomerId",
+            "OutputColumnName": "CustomerId"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount",
+              "ContractId",
+              "CustomerId"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 14,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 245,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.045908410133168154,
+            "LabelColumnName": "Renewed",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmBinary",
+        "Score": 0.836111111111111,
+        "RuntimeInSeconds": 1.161,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount"
+            ],
+            "InputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "ContractId",
+            "OutputColumnName": "ContractId"
+          },
+          "e2": {
+            "InputColumnName": "CustomerId",
+            "OutputColumnName": "CustomerId"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "CompletionTimeInDays",
+              "DaysOverdue",
+              "NonStandardResultsCount",
+              "TotalParametersCount",
+              "ContractId",
+              "CustomerId"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 0.99999977667298645,
+            "NumberOfTrees": 387,
+            "SubsampleFraction": 0.99999977667298645,
+            "MaximumBinCountPerFeature": 211,
+            "FeatureFraction": 0.99999999,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 0.42009956111361069,
+            "LabelColumnName": "Renewed",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "ReplaceMissingValues",
+      "e1": "FeaturizeText",
+      "e2": "FeaturizeText",
+      "e3": "Concatenate",
+      "e4": "FastTreeBinary",
+      "e5": "LightGbmBinary",
+      "e6": "LbfgsLogisticRegressionBinary",
+      "e7": "SdcaLogisticRegressionBinary",
+      "e8": "FastForestBinary",
+      "e9": "Naive"
+    },
+    "Schema": "e0 * e1 * e2 * e3 * (e4 + e5 + e6 + e7 + e8 * e9)",
+    "MetricName": "Accuracy",
+    "ModelFilePath": "C:\\Users\\ADMIN\\source\\repos\\KimNgan0906\\enviroment\\AIPrediction\\MLModel1.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "ClassificationTrainingOption",
+    "TrainingTime": 60,
+    "LabelColumn": "Renewed",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}

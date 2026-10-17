@@ -1,0 +1,45 @@
+# Build output =======================================================
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Visual Studio ======================================================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+**/*.suo
+
+# Build cache & intermediate =========================================
+*.cache
+*.dll
+*.pdb
+*.exe
+
+# NuGet ==============================================================
+packages/
+**/packages/*
+!packages/build/
+
+# Logs ===============================================================
+*.log
+
+# Others =============================================================
+*.db
+*.sqlite
+*.bak
+*.tmp
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.vsidx
+DocumentLayout*.json
+
+# Build output
+bin/
+obj/
+*.dll
+*.pdb
